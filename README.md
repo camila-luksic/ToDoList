@@ -14,12 +14,14 @@ Este proyecto consiste en una aplicación **To-Do List** desarrollada con **Slim
    Ejemplo: 
    C:\xampp\htdocs\todoApp
 2. Instalar dependencias con Composer:
-composer require slim/slim:"^4.0"
-composer require slim/psr7
+
+  composer require slim/slim:"^4.0"
+  composer require slim/psr7
 
 3.Encender los servicios en XAMPP:
 -Apache 
 -MySQL 
+
 **Configuración de puertos**
 
 En este proyecto se usaron puertos personalizados por conflictos locales:
@@ -29,10 +31,14 @@ Apache → 8081
 MySQL → 3307 
 
 4.Configurar la base de datos:
-Ingresar a phpMyAdmin
+
+ Ingresar a phpMyAdmin
 -Crear una base de datos:
+
 CREATE DATABASE todo_app;
+
 -Crear la tabla todos:
+
 CREATE TABLE todos (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
@@ -41,7 +47,9 @@ CREATE TABLE todos (
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
 **Rutas del proyecto**
+
 Front-End (interfaz con Bootstrap + AlertifyJS)
 http://localhost:8081/todoApp/public/app.php
 
