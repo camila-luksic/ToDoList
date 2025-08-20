@@ -33,6 +33,7 @@ MySQL → 3307
 4.Configurar la base de datos:
 
  Ingresar a phpMyAdmin
+ 
 -Crear una base de datos:
 
 CREATE DATABASE todo_app;
@@ -61,6 +62,4 @@ Base URL: http://localhost:8081/todoApp/public/todos
 - PUT /todos/{id} → Editar una tarea existente  
 - DELETE /todos/{id} → Eliminar una tarea  
 
-
-Eliminar tareas con un clic.
 
